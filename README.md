@@ -1,13 +1,15 @@
-# Live Preview:
+## Live Preview:
 
 ### [https://kowalikdominik.github.io/linkedinClone/](https://kowalikdominik.github.io/linkedinClone/)
 
-# Getting Started:
+## Getting Started:
 
-### `git clone https://github.com/KowalikDominik/linkedinClone.git`
+```
+git clone https://github.com/KowalikDominik/linkedinClone.git
+```
 
-### `cd linkedinClone`
+`cd linkedinClone`
 
-### `yarn`
+`yarn`
 
-### `yarn start`
+`yarn start`
