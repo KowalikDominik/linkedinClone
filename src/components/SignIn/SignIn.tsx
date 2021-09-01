@@ -16,6 +16,8 @@ export const SignIn: React.FC = () => {
 
     if (form.checkValidity() === false) {
       const error = [];
+      setEmailValid(true);
+      setPasswordValid(true);
       if (!form.email.checkValidity()) {
         error.push("Wpisz swój adres e-mail lub numer telefonu komórkowego.");
         form.email.focus();

@@ -1,10 +1,8 @@
 .input {
   background-color: white;
   &.danger {
-    &:focus {
-      border: 1px solid transparent;
-      border-color: #d11124;
-      box-shadow: 0 0 2px #d11124;
-    }
+    border: 1px solid transparent;
+    border-color: #d11124;
+    box-shadow: 0 0 2px #d11124;
   }
 }
