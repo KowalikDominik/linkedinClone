@@ -1,27 +1,25 @@
 .header {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 0 16px;
+  padding: 5px 16px;
+  .join {
+    border: 0;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+      color: black;
+    }
+  }
+  .login {
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #0a66c2;
+    &:hover {
+      background-color: #c5e2ff;
+    }
+  }
   .options {
     height: 40px;
     .option {
       padding: 12px 0;
-      .join {
-        border: 0;
-        margin-right: 12px;
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.08);
-          color: black;
-        }
-      }
-      .login {
-        border-radius: 20px;
-        color: #0a66c2;
-        &:hover {
-          background-color: #c5e2ff;
-        }
-      }
     }
   }
 }
