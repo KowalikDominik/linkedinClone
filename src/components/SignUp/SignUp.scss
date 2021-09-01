@@ -1,0 +1,44 @@
+.signup {
+  padding-top: 25px;
+  background-color: #f3f2ef;
+  min-height: 100vh;
+  h2 {
+    margin: 25px auto;
+    text-align: center;
+  }
+  button {
+    border-radius: 30px;
+    height: 46px;
+    font-size: 1rem;
+    &.google {
+      background: #fff;
+      color: #00004a;
+      border-color: #838383;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  form {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: center;
+    }
+    .login-link {
+      padding: 10px 0;
+    }
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .legal {
+    font-size: 12px;
+  }
+}
