@@ -8,8 +8,14 @@
 git clone https://github.com/KowalikDominik/linkedinClone.git
 ```
 
-`cd linkedinClone`
+```
+cd linkedinClone
+```
 
-`yarn`
+```
+yarn
+```
 
-`yarn start`
+```
+yarn start
+```
