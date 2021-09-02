@@ -22,7 +22,7 @@ export const SignUp: React.FC<Props> = () => {
     setValidated(true);
   };
   const googleLogin = () => {
-    window.location.replace("https://www.google.com");
+    window.location.href = "http://www.google.pl";
   };
   return (
     <div className="signup">
