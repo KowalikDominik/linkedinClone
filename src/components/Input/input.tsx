@@ -11,9 +11,18 @@ interface Props {
   label?: string;
   placeholder: string;
   invalid?: boolean;
+  feedback?: {
+    type: "invalid";
+    msg: string;
+  };
 }
 
-export const Input: React.FC<Props> = ({ label, invalid, ...otherProps }) => {
+export const Input: React.FC<Props> = ({
+  label,
+  invalid,
+  feedback,
+  ...otherProps
+}) => {
   return (
     <>
       {label && <Form.Label>{label}</Form.Label>}
@@ -21,6 +30,11 @@ export const Input: React.FC<Props> = ({ label, invalid, ...otherProps }) => {
         className={`input ${invalid ? "danger" : ""}`}
         {...otherProps}
       />
+      {feedback && (
+        <Form.Control.Feedback type={feedback.type}>
+          {feedback.msg}
+        </Form.Control.Feedback>
+      )}
     </>
   );
 };

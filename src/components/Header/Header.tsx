@@ -14,6 +14,7 @@ export const Header: React.FC = () => {
             <Logo />
           </Link>
         </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>

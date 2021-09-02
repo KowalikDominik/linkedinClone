@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { GoogleIcon } from "../GoogleIcon/GoogleIcon";
+import { Input } from "../Input/input";
 import { Logo } from "../Logo/Logo";
 
 import "./SignUp.scss";
@@ -32,19 +33,28 @@ export const SignUp: React.FC<Props> = () => {
             <h2>Osiągnij sukces w życiu zawodowym</h2>
             <Form noValidate validated={validated} onSubmit={submitHandler}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Adres e-mail</Form.Label>
-                <Form.Control required type="email" placeholder="" />
-                <Form.Control.Feedback type="invalid">
-                  Wpisz swój adres e-mail.
-                </Form.Control.Feedback>
+                <Input
+                  type="email"
+                  name="email"
+                  label="Adres e-mail"
+                  placeholder=""
+                  required
+                  feedback={{
+                    type: "invalid",
+                    msg: "Wpisz swój adres e-mail.",
+                  }}
+                />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Hasło (co najmniej 6 znaków)</Form.Label>
-                <Form.Control required type="password" placeholder="" />
-                <Form.Control.Feedback type="invalid">
-                  Wpisz swoje hasło.
-                </Form.Control.Feedback>
+                <Input
+                  type="password"
+                  name="password"
+                  label="Hasło (co najmniej 6 znaków)"
+                  placeholder=""
+                  required
+                  feedback={{ type: "invalid", msg: "Wpisz swoje hasło." }}
+                />
               </Form.Group>
               <p className="legal">
                 Klikając Wyraź zgodę i dołącz, wyrażasz zgodę na na warunki
