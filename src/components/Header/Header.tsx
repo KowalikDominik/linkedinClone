@@ -7,22 +7,20 @@ import "./Header.scss";
 
 export const Header: React.FC = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="header">
+    <Navbar translate="no" expand="sm" className="header" collapseOnSelect>
       <Container>
-        <Navbar.Brand>
-          <Link to="/">
-            <Logo />
-          </Link>
+        <Navbar.Brand as={Link} to="/">
+          <Logo />
         </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto"></Nav>
-          <Nav>
-            <Nav.Link as={Link} className="option" to="/join">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} className="option text-center" to="/join">
               <Button variant="outline-secondary" className="join">
                 Dołącz teraz
               </Button>
             </Nav.Link>
-            <Nav.Link as={Link} className="option" to="/">
+            <Nav.Link as={Link} className="option text-center" to="/">
               <Button variant="outline-primary" className="login">
                 Zaloguj się
               </Button>
